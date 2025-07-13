@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Harmonic Records - Download Our Latest EP&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--primary: #8A2BE2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--dark: #121212;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--darker: #0a0a0a;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--light: #f8f8f8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--gray: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--success: #00cc66;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, var(--darker), var(--dark));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header::before {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, #ff00cc, #3333ff, #00ccff);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.logo {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 0 0 20px rgba(138, 43, 226, 0.7);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, #ff00cc, #3333ff);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-text-fill-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.subtitle {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #aaa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ep-info {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 3rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ep-cover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 0 0 300px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ep-cover img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ep-details {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-width: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ep-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.ep-meta {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.meta-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tracks-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 3rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-title::after {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateX(-50%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tracks-grid {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease, box-shadow 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-5px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: rgba(138, 43, 226, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-number {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(138, 43, 226, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-duration {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #aaa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-player {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>audio {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>audio::-webkit-media-controls-panel {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-actions {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.choose-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.choose-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #7a1fd9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 3rem auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback-section.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.selected-track {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.selected-track .track-number {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback-form {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.form-group {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>input, textarea {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>textarea {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 120px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>resize: vertical;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>input:focus, textarea:focus {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.submit-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--success);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.submit-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #00bb5d;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 15px rgba(0, 204, 102, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 3rem auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-section.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-icon {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 4rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--success);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--success);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.download-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #00bb5d;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 20px rgba(0, 204, 102, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.thank-you {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #aaa;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #777;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.social-links {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.social-link {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 45px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 45px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.social-link:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-3px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.ep-info {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.ep-cover {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>flex: 0 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>max-width: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="logo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-compact-disc"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Harmonic Records&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="subtitle"&gt;Experience our latest EP "Neon Dreams" - download available after sharing your favorite track feedback&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="ep-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="ep-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Neon Dreams EP Cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="ep-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="ep-title"&gt;Neon Dreams&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="ep-meta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="meta-item"&gt;Electronic&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="meta-item"&gt;6 Tracks&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="meta-item"&gt;2023 Release&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="meta-item"&gt;320kbps MP3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Embark on a sonic journey through futuristic soundscapes and pulsating rhythms. "Neon Dreams" blends ambient textures with driving beats, creating an immersive experience that transcends traditional electronic music boundaries.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Featuring collaborations with emerging artists and innovative production techniques, this EP represents Harmonic Records' commitment to pushing creative boundaries.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="tracks-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;EP Tracks&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="tracks-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Track 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="track-card" data-track="1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-number"&gt;1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-title"&gt;Electric Dawn&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-duration"&gt;4:22&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-player"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;audio controls&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="choose-btn" data-track="1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-heart"&gt;&lt;/i&gt; Choose as Favorite</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Track 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="track-card" data-track="2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-number"&gt;2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-title"&gt;Neon Skyline&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-duration"&gt;3:45&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-player"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;audio controls&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="choose-btn" data-track="2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-heart"&gt;&lt;/i&gt; Choose as Favorite</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Track 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="track-card" data-track="3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-number"&gt;3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-title"&gt;Digital Echoes&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-duration"&gt;5:18&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-player"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;audio controls&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="choose-btn" data-track="3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-heart"&gt;&lt;/i&gt; Choose as Favorite</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Track 4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="track-card" data-track="4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-number"&gt;4&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-title"&gt;Midnight Circuit&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-duration"&gt;4:50&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-player"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;audio controls&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="choose-btn" data-track="4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-heart"&gt;&lt;/i&gt; Choose as Favorite</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Track 5 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="track-card" data-track="5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-number"&gt;5&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-title"&gt;Synthetic Love&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-duration"&gt;3:58&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-player"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;audio controls&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" type="audio/mpeg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="choose-btn" data-track="5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-heart"&gt;&lt;/i&gt; Choose as Favorite</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Track 6 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="track-card" data-track="6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-number"&gt;6&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-title"&gt;Dream Sequence&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="track-duration"&gt;6:12&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-player"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;audio controls&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" type="audio/mpeg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="track-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="choose-btn" data-track="6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-heart"&gt;&lt;/i&gt; Choose as Favorite</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="feedbackSection" class="feedback-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="selected-track"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="track-number"&gt;1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Electric Dawn&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Your favorite track selection&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;form class="feedback-form" id="feedbackForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="name"&gt;Your Name&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="name" placeholder="Enter your name" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="email"&gt;Email Address&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="email" id="email" placeholder="Enter your email" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="comment"&gt;Why is this your favorite track?&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;textarea id="comment" placeholder="Tell us what you love about this track..." required&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button type="submit" class="submit-btn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-paper-plane"&gt;&lt;/i&gt; Submit Feedback</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="downloadSection" class="download-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="download-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-cloud-download-alt"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Thank You for Your Feedback!&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="download-text"&gt;Your download is now ready. Click below to get the full EP.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="download-btn" id="downloadBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-download"&gt;&lt;/i&gt; Download EP (ZIP File)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="thank-you"&gt;We appreciate you supporting our music!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="social-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-soundcloud"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-spotify"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&amp;copy; 2023 Harmonic Records. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Promoting innovative electronic music since 2018&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', function() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Track selection logic</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const chooseButtons = document.querySelectorAll('.choose-btn');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const feedbackSection = document.getElementById('feedbackSection');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const downloadSection = document.getElementById('downloadSection');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const feedbackForm = document.getElementById('feedbackForm');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const downloadBtn = document.getElementById('downloadBtn');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const selectedTrack = document.querySelector('.selected-track .track-number');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const selectedTrackTitle = document.querySelector('.selected-track h3');</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Track titles</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const trackTitles = {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>1: 'Electric Dawn',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>2: 'Neon Skyline',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>3: 'Digital Echoes',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>4: 'Midnight Circuit',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>5: 'Synthetic Love',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>6: 'Dream Sequence'</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Set up track selection</p>
+<p class="p1"><span class="Apple-converted-space">            </span>chooseButtons.forEach(button =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>button.addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const trackId = this.getAttribute('data-track');</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Update selected track display</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>selectedTrack.textContent = trackId;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>selectedTrackTitle.textContent = trackTitles[trackId];</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Show feedback section</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedbackSection.classList.add('active');</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Scroll to feedback section</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedbackSection.scrollIntoView({ behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Form submission</p>
+<p class="p1"><span class="Apple-converted-space">            </span>feedbackForm.addEventListener('submit', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>e.preventDefault();</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Get form values</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const name = document.getElementById('name').value;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const email = document.getElementById('email').value;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const comment = document.getElementById('comment').value;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const trackId = selectedTrack.textContent;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const trackTitle = trackTitles[trackId];</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// In a real implementation, you would send this data to a server</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log('Feedback submitted:');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log('Name:', name);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log('Email:', email);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log('Comment:', comment);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log('Favorite Track:', trackTitle);</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Hide feedback section, show download section</p>
+<p class="p1"><span class="Apple-converted-space">                </span>feedbackSection.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>downloadSection.classList.add('active');</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Scroll to download section</p>
+<p class="p1"><span class="Apple-converted-space">                </span>downloadSection.scrollIntoView({ behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Set your Dropbox download link here</p>
+<p class="p1"><span class="Apple-converted-space">            </span>downloadBtn.addEventListener('click', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Replace with your actual Dropbox link</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const dropboxLink = 'https://www.dropbox.com/s/your-ep-file.zip?dl=1';</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Open download in new tab</p>
+<p class="p1"><span class="Apple-converted-space">                </span>window.open(dropboxLink, '_blank');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
